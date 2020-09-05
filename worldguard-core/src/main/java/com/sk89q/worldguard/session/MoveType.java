@@ -33,6 +33,7 @@ public enum MoveType {
     SWIM(true, false),
     TELEPORT(true, true),
     RIDE(true, false),
+    RIPTIDE(true, false),
     OTHER_NON_CANCELLABLE(false, false),
     OTHER_CANCELLABLE(true, false);
 

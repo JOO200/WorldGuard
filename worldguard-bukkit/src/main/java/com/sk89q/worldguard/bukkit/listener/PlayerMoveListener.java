@@ -97,6 +97,8 @@ public class PlayerMoveListener implements Listener {
             moveType = MoveType.SWIM;
         } else if (event.getPlayer().getVehicle() != null && event.getPlayer().getVehicle() instanceof Horse) {
             moveType = MoveType.RIDE;
+        } else if (event.getPlayer().isRiptiding()) {
+            moveType = MoveType.RIPTIDE;
         }
         com.sk89q.worldedit.util.Location weLocation = session.testMoveTo(localPlayer, BukkitAdapter.adapt(to), moveType);
 
